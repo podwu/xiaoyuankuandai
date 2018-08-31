@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="style/style.css">
+<title>九江移动校园宽带登记</title>
+</head>
+<body id="bd_index">
+<div id="wrapper">
+	<header id="header" class="dark noBack center">
+		<h1>九江移动校园宽带登记</h1>
+	</header>
+    <div id="main" class="reg">
+    	<form>
+			<div class="frm-boxs wide">
+				<fieldset class="line-title"><legend>城市</legend></fieldset>
+				<div class="frm-box col">
+					<div class="frm-box-bd">
+						<div class="btn-box col2">
+							<label class="btn"><input type="radio" name="rd_city" value="1" checked><em>九江</em></label>
+							<label class="btn"><input type="radio" name="rd_city" value="2"><em>共青城</em></label>
+						</div>
+					</div>
+				</div>
+				<fieldset class="line-title"><legend>学校</legend></fieldset>
+				<div class="frm-box col">
+					<div class="frm-box-bd">
+						<div class="btn-box s_list_1">
+							<label class="btn"><input type="radio" name="rd_school" value="江西财经职业学院"><em>江西财经职业学院</em></label>
+							
+						</div>
+						<div class="btn-box s_list_2">
+							<label class="btn"><input type="radio" name="rd_school" value="江西师大"><em>江西师大</em></label>
+						</div>
+					</div>
+				</div>
+				<fieldset class="line-title"><legend>楼栋</legend></fieldset>
+				<div class="frm-box col">
+					<div class="frm-box-bd">
+						<div class="btn-box col4">
+							<label class="btn"><input type="radio" name="rd_building" value="北1"><em>北1</em></label>
+						</div>
+					</div>
+				</div>
+				<fieldset class="line-title"><legend>楼层</legend></fieldset>
+				<div class="frm-box col">
+					<div class="frm-box-bd">
+						<div class="btn-box col4">
+							<label class="btn"><input type="radio" name="rd_floor" value="1"><em>1</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="2"><em>2</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="3"><em>3</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="4"><em>4</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="5"><em>5</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="6"><em>6</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="7"><em>7</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="8"><em>8</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="9"><em>9</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="10"><em>10</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="11"><em>11</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="12"><em>12</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="13"><em>13</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="14"><em>14</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="15"><em>15</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="16"><em>16</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="17"><em>17</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="18"><em>18</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="19"><em>19</em></label>
+							<label class="btn"><input type="radio" name="rd_floor" value="20"><em>20</em></label>
+						</div>
+					</div>
+				</div>
+				<fieldset class="line-title"><legend>联系方式</legend></fieldset>
+				<div class="frm-box">
+					<div class="frm-box-hd">
+						<label class="frm-title">地址信息</label>
+					</div>
+					<div class="frm-box-bd">
+						<em class="val address"></em>
+						<input type="hidden" name="address">
+					</div>
+				</div>
+				<div class="frm-box">
+					<div class="frm-box-hd">
+						<label class="frm-title">房间号</label>
+					</div>
+					<div class="frm-box-bd">
+						<input type="text" name="room" class="com-input room" placeholder="点此输入" />
+					</div>
+				</div>
+				<div class="frm-box">
+					<div class="frm-box-hd">
+						<label class="frm-title">手机号</label>
+					</div>
+					<div class="frm-box-bd">
+						<input type="text" name="phone" class="com-input phone" placeholder="点此输入" />
+					</div>
+				</div>
+				<div class="frm-box">
+					<div class="frm-box-hd">
+						<label class="frm-title">短信验证码</label>
+					</div>
+					<div class="frm-box-bd">
+						<input type="text" name="smscode" class="com-input smscode" placeholder="输入短信验证码" />
+					</div>
+					<a class="btn code"><em>获取验证码</em></a> 
+				</div>
+			</div>
+			<div class="frm-action">
+				<button type="button" class="btn submit"><em>确认登记</em></button>
+			</div>
+		</form>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+var s_data=[
+	{"id":"1","city":"九江","name":"九江学院（本部）","building":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,留学生1,留学生2,留学生3,艺术1,艺术2,艺术3,艺术4,艺术5"},
+	{"id":"2","city":"九江","name":"九江学院(庐峰校区）","building":"1,2,3"},
+	{"id":"3","city":"九江","name":"九江学院（浔东校区）","building":"女1,女2,女3,女4,女5,男1,男2"},
+	{"id":"4","city":"九江","name":"九江学院（八里湖）","building":"1"},	
+	{"id":"5","city":"九江","name":"九江职业大学（老校区）","building":"1,2,3,4,5,6"},
+	{"id":"6","city":"九江","name":"九江职业大学（新校区）","building":"A1,A2,A3,A4,A5,A6,A7,A8,B1,B2,B3,B4,B5,B6,C1,C2,C3,D1,D2"},	
+	{"id":"7","city":"九江","name":"九江职业技术学院（老校区）","building":"1,2,3,4,5,6,7,8,9,10,11,12"},
+	{"id":"8","city":"九江","name":"九江职业技术学院（濂溪新校区）","building":"1,2,3,4,5,6,7,8,9,10,11"},
+	{"id":"9","city":"九江","name":"江西财经职业学院","building":"北1,北2,北3,北4,北5,北6,北7,北8,南1,南2,南3,南4,南5,南6,南7,南8,东1,东2,东3,东4"},
+	{"id":"10","city":"九江","name":"九江科技中专","building":"1,2,3"},
+	{"id":"11","city":"共青城","name":"江西师大","building":"1,2,3,4,5,6,7,8,9,10,11,12"}	
+];
+
+$("[name='rd_city']").on("click",function(){
+	if($(this).val()==2){
+		$(".s_list_1").addClass("dis_0");
+		$(".s_list_2").addClass("dis_1");
+	}else{
+		$(".s_list_1").removeClass("dis_0");
+		$(".s_list_2").removeClass("dis_1");
+	}
+	$("[name='rd_school']").prop('checked',false);
+	$("[name='rd_building']").prop('checked',false);
+	$("[name='rd_floor']").prop('checked',false);
+	$(".val.address").text("");
+});
+
+$("[name='rd_school']").on("click",function(){
+	$("[name='rd_building']").prop('checked',false);
+	$("[name='rd_floor']").prop('checked',false);	
+	$(".val.address").text($(this).val());
+});
+
+$("[name='rd_building']").on("click",function(){
+	$("[name='rd_floor']").prop('checked',false);
+	if($("[name='rd_school']:checked").val()==undefined){
+		showTip("请先选中学校！","toast");
+		return false;
+	}else{
+		$(".val.address").text($("[name='rd_school']:checked").val()+"，"+$(this).val()+"栋");
+	}
+});
+$("[name='rd_floor']").on("click",function(){
+	if($("[name='rd_building']:checked").val()==undefined){
+		showTip("请先选中楼栋！","toast");
+		return false;
+	}else{
+		$(".val.address").text($("[name='rd_school']:checked").val()+"，"+$("[name='rd_building']:checked").val()+"栋，"+$(this).val()+"层");
+		$("[name='address']").val($(".val.address").text());
+	}
+});
+
+//表单提交判断
+var phoneRule=/^1[3-8]\d{9}$/,
+	codeRule=/^\d{6}$/;
+$(".btn.submit").on("click",function(){
+	if($("[name='rd_school']:checked").val()==undefined){
+		showTip("请选择学校！","toast");
+		return false;
+	}else if($("[name='rd_building']:checked").val()==undefined){
+		showTip("请选择楼栋！","toast");
+		return false;
+	}else if($("[name='rd_floor']:checked").val()==undefined){
+		showTip("请选择楼层！","toast");
+		return false;
+	}else if(($("input.room").val()=="")){
+		$("input.room").parents(".frm-box").addClass("err");	
+		$("input.room").on("keyup",function(){	
+			$("input.room").parents(".frm-box").removeClass("err");
+		});
+		showTip("请输入房间号！","toast");
+		$("input.room").focus();
+		return false;
+	}else if(($("input.phone").val()=="")||(!phoneRule.test($("input.phone").val()))){
+		$("input.phone").parents(".frm-box").addClass("err");
+		$("input.phone").on("keyup",function(){	
+			if(phoneRule.test($("input.phone").val())){
+				$("input.phone").parents(".frm-box").removeClass("err");
+			}else {
+				$("input.phone").parents(".frm-box").addClass("err");
+			}
+		});
+		showTip("输入正确的手机号码！","toast");
+		$("input.phone").focus();
+		return false;	
+	}else if(($("input.smscode").val()=="")||(!codeRule.test(($("input.smscode").val())))){
+		$("input.smscode").parents(".frm-box").addClass("err");		
+		$("input.smscode").on("keyup",function(){
+			if(codeRule.test($("input.smscode").val())){
+				$("input.smscode").parents(".frm-box").removeClass("err");
+			}else {
+				$("input.smscode").parents(".frm-box").addClass("err");
+			}
+		});		
+		showTip("输入正确的短信验证码！","toast");
+		$("input.smscode").focus();
+		return false;
+	}
+	window.location.href="reg_ok.html"; 
+});
+
+//发送短信验证码
+$(".btn.code").on("click",function(){		
+	var valPhone=$("input.phone").val();
+	if((valPhone=="")||(!phoneRule.test($("input.phone").val()))){	
+		$("input.phone").parents(".frm-box").addClass("err");				
+		$("input.phone").on("keyup",function(){
+			if(phoneRule.test($("input.phone").val())){
+				$("input.phone").parents(".frm-box").removeClass("err");
+			}
+		});
+		showTip("输入正确的手机号码！","toast");
+		return false;
+	}else{
+		sysSecond=30; 
+		$(this).addClass("count-down");
+		InterValObj=window.setInterval(SetRemainTime,1000);
+		$("input.phone").attr("disabled",true);
+	}
+});
+
+//倒计时
+function SetRemainTime(){
+	if (sysSecond>0) {
+		sysSecond=sysSecond-1; 
+		$(".count-down>em").text(sysSecond+" 秒");
+	}else{
+		window.clearInterval(InterValObj);
+		$(".btn.code").removeClass("count-down");
+		$(".btn.code>em").text("获取验证码");
+		$("input.phone").attr("disabled",false);
+	}
+}
+
+//信息提示
+function showTip(tip,position,el,time){
+	if(!el){el=$("body");}
+	if(!time){time=1600;}
+	el.children(".com-tip").remove();
+	el.append("<div class='com-tip "+position+"'>"+tip+"</div>");
+	if(position=="toast"){
+		el.children(".com-tip").fadeIn(600)
+	}else{
+		el.children(".com-tip").slideDown(300);
+	}
+	var tipTimer;
+	clearTimeout(tipTimer);
+	tipTimer=setTimeout(function(){
+		if(position=="toast"){
+			el.children(".com-tip").fadeOut(600)
+		}else{
+			el.children(".com-tip").slideUp(300);
+		}
+	},time);
+}
+</script>
+</body>
+</html>
