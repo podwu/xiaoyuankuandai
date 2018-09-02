@@ -556,6 +556,7 @@ fieldset.line-title>legend {
 }
 .btn-box .btn {position:relative;width:100%;margin-bottom:16px;border:none;background:none;line-height:42px;}
 .btn-box.col2 .btn {width:48%;}
+.btn-box.col3 .btn {width:30.8%;}
 .btn-box.col4 .btn {width:22%;}
 .btn-box .btn>input {opacity:0;position:absolute;left:0;top:0;right:0;bottom:0;}
 .btn-box .btn>em {display:block;background-color:#f3f3f3; box-sizing:border-box;}
@@ -581,4 +582,27 @@ fieldset.line-title>legend {
 }
 .frm-boxs .line-title {margin:16px;}
 .frm-boxs .line-title>legend {font-size:14px;font-weight:700;}
-.s_list_2 {display:none;}
+.s_list_2,.s_list_3 {display:none;}
+
+/*my:180901:0*/
+.my #school + .frm-box .btn {
+	text-align:left;
+}
+.my #school + .frm-box .btn>em {padding-left:16px;}
+
+.my .frm-boxs {border-bottom:1px solid #ddd;margin-bottom: 8px;}
+.customer {display:none;background-color:#fff;padding:16px 16px;min-height:640px;}
+.customer>.title {
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	padding:16px;
+	background-color:#0072ba;
+}
+.customer>.main>.list {display:none;padding:0;border:none;}
+
+.customer>.main>.list>li:last-child {border-bottom:1px solid #eee;}
+.customer>.main>.list.cur {display:block;}
+.pop.confirm.edit header>h3 {color:#333;}
+.pop.confirm.edit .com-tip {z-index:999;}
+/*my:180901:1/
